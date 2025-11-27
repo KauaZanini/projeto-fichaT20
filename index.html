@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Arcana - Edição Digital</title>
+    <link rel="stylesheet" href="cssdoindex.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ficha Arcana - Tormenta 20</h1>
+
+        <div class="section">
+            <h2>Informações do Personagem</h2>
+            <div class="Lane1">
+                <label id="lab" for="nome">nome</label>
+                <input id="nome" type="text" placeholder="Nome do jogador">
+                <label id="lab" for="nome">personagem</label>
+                <input id="nome" type="text" placeholder="Nome do personagem">
+            </div>
+            <div class="campo">
+                <label for="raca">Raça</label>
+                <input id="raca" type="text" placeholder="Raça (Humano, Elfo, anão etc.)">
+            </div>
+            <div class="campo">
+                <label for="Origem">Origem</label>
+                <input id="Origem" type="text" placeholder="Origem (Artista, Batedor, Herdeiro, etc.)">
+            </div><br>
+            <!--classe-->
+            <div class="campo">
+                <label for="classe">Classe e nivel</label>
+                <input id="classe" type="text" placeholder="Classe (Guerreiro, druida, etc.)">
+                <input id="nivel" type="number">
+                <label for="divindade">Divindade</label>
+                <input id="divindade" type="text" placeholder="qual Divindade seu personagem adora?">
+            </div>
+            <div class="campo">
+                <label for="historia">História do Personagem</label>
+                <textarea id="historia" placeholder="Conte aqui a história do seu personagem!"></textarea>
+            </div>
+        </div>
+        <div class="atributos-section">
+            <h2>Atributos Gerais</h2>
+            <div class="atributos">
+                <div class="atributo">
+                    <label>Força</label>
+                    <input type="number" id="forca">
+                </div>
+                <div class="atributo">
+                    <label>Destreza</label>
+                    <input type="number" id="destreza">
+                </div>
+                <div class="atributo">
+                    <label>Constituição</label>
+                    <input type="number" id="constituicao">
+                </div>
+                <div class="atributo">
+                    <label>Inteligência</label>
+                    <input type="number" id="inteligencia">
+                </div>
+                <div class="atributo">
+                    <label>Sabedoria</label>
+                    <input type="number" id="sabedoria">
+                </div>
+                <div class="atributo">
+                    <label>Carisma</label>
+                    <input type="number" id="carisma">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Equipamentos e Itens</h2>
+            <textarea id="equipamentos" placeholder="Liste os equipamentos, armas e itens aqui..."></textarea>
+        </div>
+
+        <div class="section">
+            <h2>Magias e Habilidades</h2>
+            <textarea id="magias" placeholder="Anote suas magias e habilidades especiais..."></textarea>
+        </div>
+
+        <div class="section">
+            <h2>Anotações Gerais</h2>
+            <textarea id="anotacoes" placeholder="Qualquer informação extra..."></textarea>
+        </div>
+    </div>
+</body>
+</html>

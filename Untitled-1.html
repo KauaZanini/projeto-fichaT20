@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Perícias RPG</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #faf6f2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .sheet {
+    width: 420px;
+    background: #fff;
+    padding: 20px;
+    border: 3px solid #8b0000;
+    border-radius: 8px;
+  }
+  h2 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 10px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th, td {
+    padding: 4px;
+    text-align: center;
+  }
+  th {
+    background: #e6d4cf;
+  }
+  .skill-name {
+    text-align: left;
+  }
+  input[type="number"] {
+    width: 40px;
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <h2>PERÍCIAS</h2>
+  <table border="1">
+    <tr>
+      <th>Perícia</th>
+      <th>Total</th>
+      <th>Nível</th>
+      <th>Atributo</th>
+      <th>Treino</th>
+      <th>Outros</th>
+    </tr>
+  </table>
+  <table id="skills-table" border="1"></table>
+</div>
+
+<script>
+const skills = [
+  "Acrobacia", "Adestramento", "Atletismo", "Atuação", "Cavalgar", "Conhecimento",
+  "Cura", "Diplomacia", "Enganação", "Fortitude", "Furtividade", "Guerra",
+  "Iniciativa", "Intimidação", "Intuição", "Investigação", "Jogatina", "Ladinagem",
+  "Luta", "Misticismo", "Nobreza", "Ofício", "Percepção", "Pilotagem", "Pontaria",
+  "Reflexos", "Religião", "Sobrevivência", "Vontade"
+];
+
+const table = document.getElementById("skills-table");
+
+skills.forEach(skill => {
+  const row = document.createElement("tr");
+  row.innerHTML = `
+    <td class="skill-name">${skill}</td>
+    <td><input type="number" value="0" disabled></td>
+    <td><input type="number" value="0"></td>
+    <td><input type="number" value="0"></td>
+    <td><input type="number" value="0"></td>
+    <td><input type="number" value="0"></td>
+  `;
+  table.appendChild(row);
+});
+</script>
+</body>
+</html>
